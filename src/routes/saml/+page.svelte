@@ -5,10 +5,10 @@
     let header = "SAML Test environment";
     const samlVersion = '2.0';
     const issuer = 'urn:nordomatic-dev.eu.auth0.com';
-    const certLink = 'https://nordomatic-dev.eu.auth0.com/certificate';
+    const certLink = 'const certLink = \'/saml/Nordomatic%20Dev.pem\'';
     const sha1Fingerprint = '3D:CB:A5:C7:07:A0:5F:D7:15:60:C1:CE:43:84:09:BC:A9:30:B0:29';
     const loginUrl = 'https://nordomatic-dev.eu.auth0.com/samlp/MXXh2R8pDXX9qwTD6m0xlEGFBwzc0XZk';
-    const metadataLink = 'https://nordomatic-dev.eu.auth0.com/metadata';
+    const metadataLink = '/saml/Nordomatic%20Metadata.xml';
     const googleConnection = `${loginUrl}?connection=google-oauth2`;
     const usernamePasswordConnection = `${loginUrl}?connection=Username-Password-Authentication`;
 </script>
