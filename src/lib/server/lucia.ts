@@ -67,7 +67,7 @@ export const auth = lucia({
  * @param {string} auth.appDomain - The Auth0 client domain.
  * @param {string} auth.redirectUri - The Auth0 client callback URL.
  * @param {string} auth.clientSecret - The Auth0 client secret.
- * @param {string} auth.scope - The Auth0 client secret.
+ * @param {list} auth.scope - The Auth0 client secret.
  *
  * @returns {Object} - An instance of the Auth0 authentication client.
  */
@@ -76,7 +76,7 @@ export const auth0Auth = auth0(auth, {
   appDomain: AUTH0_CLIENT_DOMAIN,
   redirectUri: AUTH0_CLIENT_CALLBACK_URL,
   clientSecret: AUTH0_CLIENT_SECRET,
-  scope: 'openID profile email'
+  scope: ['openid', 'email', 'profile']
 });
 
 /**
